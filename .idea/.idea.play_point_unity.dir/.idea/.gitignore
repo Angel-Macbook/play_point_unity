@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/projectSettingsUpdater.xml
+/modules.xml
+/contentModel.xml
+/.idea.play_point_unity.iml
+# Datasource local storage ignored files
+/../../../../../../../../:\Users\eliph\RiderProjects\play_point_unity\.idea\.idea.play_point_unity.dir\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
