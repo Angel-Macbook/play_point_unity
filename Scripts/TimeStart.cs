@@ -31,7 +31,7 @@ public class TimeStart : MonoBehaviour
     private string url = "https://it-scholar.000webhostapp.com/post/time_start_url.php";
 
     void Awake()
-    {
+    { 
         hours = Hours.GetComponent<Text>();
         minute = Minute.GetComponent<Text>();
         second = Second.GetComponent<Text>();
