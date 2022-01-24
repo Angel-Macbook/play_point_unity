@@ -31,11 +31,12 @@ public class TimeStart : MonoBehaviour
     private string url = "https://it-scholar.000webhostapp.com/post/time_start_url.php";
 
     void Awake()
-    { 
+    {
+        Application.runInBackground = true;
         hours = Hours.GetComponent<Text>();
         minute = Minute.GetComponent<Text>();
         second = Second.GetComponent<Text>();
-
+        CheckTimePost();
         objInit(
             "{\"code\":0,\"text\":\"Successful save\",\"data\":{\"time_start\":null,\"count_time\":\"30\",\"fool_second\":3}}");
         Button btn = yourButton.GetComponent<Button>();

@@ -13,7 +13,7 @@ public class HttpRequestExample : MonoBehaviour
    
     private DefoultJsonResult dataElem;
     
-    [SerializeField] private string url;
+    private string url = "https://it-scholar.000webhostapp.com/post/register_url.php";
     
     public Button yourButton;
     void Awake()
@@ -31,22 +31,22 @@ public class HttpRequestExample : MonoBehaviour
     {
         URLController urlController = new URLController();
         
-        // object[,] parameters =
-        // {
-        //     {"first_name", first_name.text},
-        //     {"last_name", last_name.text},
-        //     {"login", login.text},
-        //     {"password", password.text},
-        //     {"re_password", re_password.text},
-        // };
-        object[,] parameters =
+         object[,] parameters =
+         {
+             {"first_name", first_name.text},
+             {"last_name", last_name.text},
+             {"login", login.text},
+             {"password", password.text},
+           {"re_password", re_password.text},
+         };
+        /*object[,] parameters =
         {
             {"first_name", "Jalarm1"},
             {"last_name", "123456789"},
             {"login", "123456789"},
             {"password", "123456789"},
             {"re_password", "123456789"},
-        };
+        };*/
         StartCoroutine(urlController.POST(objInit, url, parameters));
     }
     void objInit(String info)
