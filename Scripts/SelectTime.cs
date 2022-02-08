@@ -21,10 +21,9 @@ public class SelectTime : MonoBehaviour
             {"select_time", this.name},
         };
         StartCoroutine(urlController.POST(objInit, url, parameters));
-
     }
     void objInit(String info)
     {
         dataElem = DefoultJsonResult.CreateFromJSON(info);
     }
-} 
+}
