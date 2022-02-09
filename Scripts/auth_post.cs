@@ -25,16 +25,16 @@ public class auth_post : MonoBehaviour
         login = GameObject.Find("login").GetComponent<InputField>();
         password = GameObject.Find("password").GetComponent<InputField>();
         URLController urlController = new URLController();
-        // object[,] parameters =
-        // {
-        //     {"login", login.text},
-        //     {"password", password.text}
-        // };
         object[,] parameters =
         {
-            {"login", "Jalarm"},
-            {"password", "123456789"}
+            {"login", login.text},
+            {"password", password.text}
         };
+//        object[,] parameters =
+//        {
+//            {"login", "Jalarm"},
+//            {"password", "123456789"}
+//        };
         StartCoroutine(urlController.POST(objInit, url, parameters));
     }
 

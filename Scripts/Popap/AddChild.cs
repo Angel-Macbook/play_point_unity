@@ -1,23 +1,18 @@
 using System;
 using UnityEngine;
 using Controller;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class AddChild : MonoBehaviour
 {
-    public InputField login;
-    public InputField password;
+   
     public InputField ChildName;
     private string url = "https://it-scholar.000webhostapp.com/post/addChild_url.php";
     public void AddChildFunc()
     {
         Debug.Log(ChildName.text);
         URLController urlController = new URLController();
-        /*object[,] parameters =
-        {
-            {"login", login.text},
-            {"password", password.text}
-        };*/
         object[,] parameters =
         {
             {"name", ChildName.text}
@@ -26,7 +21,7 @@ public class AddChild : MonoBehaviour
     }
     void objInit(String info)
     {
-
+        SceneManager.LoadScene(1);
     }
 
 }
