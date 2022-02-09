@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using Controller;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -11,12 +12,10 @@ public class CardEvent : MonoBehaviour
     private string url_hideChild = "https://it-scholar.000webhostapp.com/post/card_event_post.php";
     private DefoultJsonResult dataElem;
     public Button id_element;
-
     public void eventChild(int type)
     {
         
         GameObject bvba = this.gameObject;
-//        string id = bvba.GetComponentInChildren<Text>().text;
         string id = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<Text>().text;
         Debug.Log(id);
         URLController urlController = new URLController();
@@ -29,7 +28,7 @@ public class CardEvent : MonoBehaviour
     void objInit(String info)
     {
         dataElem = DefoultJsonResult.CreateFromJSON(info);
-        Debug.Log(info);
+        SceneManager.LoadScene(1);
     }
 }
 

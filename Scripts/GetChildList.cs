@@ -11,6 +11,7 @@ public class GetChildList : MonoBehaviour
     public Transform[] TempArray;
     private Vector2 direction;
     private PlayerInfo dataElem;
+    public GameObject noChildPrefab;
     
     
     
@@ -33,11 +34,21 @@ public class GetChildList : MonoBehaviour
         }
         else
         {
-            foreach (var item in dataElem.data_users)
+            if (dataElem.data_users.Length != 0)
             {
-                ChildCardController userCard = Instantiate(userPrefab, prefabContent);
-                userCard.Init(item);
+                foreach (var item in dataElem.data_users)
+                {
+                    ChildCardController userCard = Instantiate(userPrefab, prefabContent);
+                    userCard.Init(item);
+                }
             }
+            else
+            {
+                noChildPrefab.SetActive(true);
+               
+            }
+            
+            
         }
     }
 }

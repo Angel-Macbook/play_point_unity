@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PrefabClose : MonoBehaviour
 {
@@ -12,5 +13,7 @@ public class PrefabClose : MonoBehaviour
     public void PrefabOpenFunc()
     {
         ParentPopap.SetActive(true);
+        
+
     }
 }

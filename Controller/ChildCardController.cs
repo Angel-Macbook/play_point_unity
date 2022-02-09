@@ -25,7 +25,6 @@ public class ChildCardController : MonoBehaviour
 
         ButtonDelete.GetComponentInChildren<Text>().text = data.id;
         ButtonHide.GetComponentInChildren<Text>().text = data.id;
-        
     }
     
 }
