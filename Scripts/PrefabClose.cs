@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PrefabClose : MonoBehaviour
 {
-    public GameObject ParentPopap;
+    public GameObject ParentPopap = null;
     public void PrefabCloseFunc()
     {
         ParentPopap.SetActive(false);
@@ -14,6 +14,9 @@ public class PrefabClose : MonoBehaviour
     {
         ParentPopap.SetActive(true);
         
-
+    }
+    public void PrefabOpenFunc_v2(GameObject elem)
+    {
+        elem.SetActive(true);
     }
 }

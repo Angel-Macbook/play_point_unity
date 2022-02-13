@@ -39,6 +39,7 @@ public class TimeStart : MonoBehaviour
         objInit(
             "{\"code\":0,\"text\":\"Successful save\",\"data\":{\"time_start\":null,\"count_time\":\"30\",\"fool_second\":3}}");
         Button btn = yourButton.GetComponent<Button>();
+        CheckTimePost();
         btn.onClick.AddListener(CheckTimePost);
     }
 
@@ -52,6 +53,7 @@ public class TimeStart : MonoBehaviour
 
     void objInit(String info)
     {
+        Debug.Log(info);
         dataElem = TimeStartJsonResult.CreateFromJSON(info);
         if (Int16.Parse(dataElem.code) == 503)
         {
