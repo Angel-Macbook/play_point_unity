@@ -30,7 +30,7 @@ public class Auth : MonoBehaviour
             {"re_password", "23"}
         };
         StartCoroutine(urlController.POST(RegisterInit, url, parameters));
-    }
+    } 
 
     private void RegisterInit(String info)
     {
