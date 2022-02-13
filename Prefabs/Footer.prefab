@@ -1311,7 +1311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logout: {fileID: 1114699112896178028}
-  authPrefab: {fileID: 7774729405227606790, guid: f6135b6854e995c4981d2ac6de547edc, type: 3}
+  authPrefab: {fileID: 8517368438201080343, guid: f6135b6854e995c4981d2ac6de547edc, type: 3}
 --- !u!1 &1114699112896178018
 GameObject:
   m_ObjectHideFlags: 0

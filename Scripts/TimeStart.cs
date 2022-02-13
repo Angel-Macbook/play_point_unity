@@ -22,7 +22,7 @@ public class TimeStart : MonoBehaviour
     private TimeStartJsonResult dataElem;
 
     public Transform windowParent;
-    public GameObject authPrefab;
+//    public GameObject authPrefab;
 
     private int operators = 1;
 
@@ -57,7 +57,7 @@ public class TimeStart : MonoBehaviour
         dataElem = TimeStartJsonResult.CreateFromJSON(info);
         if (Int16.Parse(dataElem.code) == 503)
         {
-            Instantiate(authPrefab, windowParent);
+//            Instantiate(authPrefab, windowParent);
         }
         else
         {

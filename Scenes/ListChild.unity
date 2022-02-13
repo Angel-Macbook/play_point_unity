@@ -544,7 +544,7 @@ Transform:
   m_LocalScale: {x: 0.0052083335, y: 0.0052083335, z: 0.0052083335}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1287881013
 GameObject:
@@ -823,6 +823,7 @@ GameObject:
   - component: {fileID: 1625606334}
   - component: {fileID: 1625606337}
   - component: {fileID: 1625606335}
+  - component: {fileID: 1625606336}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -891,6 +892,20 @@ MonoBehaviour:
   noChildPrefab: {fileID: 1192155614}
   windowParent: {fileID: 1640171821}
   authPrefab: {fileID: 7774729405227606790, guid: f6135b6854e995c4981d2ac6de547edc, type: 3}
+--- !u!114 &1625606336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625606333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4cd16d7146946946b773f4504f6d4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  authPrefab: {fileID: 8517368438201080343, guid: f6135b6854e995c4981d2ac6de547edc, type: 3}
+  windowParent: {fileID: 1640171821}
 --- !u!81 &1625606337
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1012,7 +1027,7 @@ RectTransform:
   - {fileID: 1621542807}
   - {fileID: 1287881014}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

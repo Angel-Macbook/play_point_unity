@@ -431,6 +431,7 @@ GameObject:
   - component: {fileID: 614867029}
   - component: {fileID: 614867027}
   - component: {fileID: 614867028}
+  - component: {fileID: 614867030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -503,6 +504,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &614867030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614867026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4cd16d7146946946b773f4504f6d4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  authPrefab: {fileID: 8517368438201080343, guid: f6135b6854e995c4981d2ac6de547edc, type: 3}
+  windowParent: {fileID: 1075668015}
 --- !u!1 &759783786 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2093199867769521806, guid: 11563ea6f1bd12846acec408992d7276, type: 3}
@@ -761,7 +776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5880576855631838140, guid: a4a65c8e4b5a87245bb1d90346680bd4, type: 3}
       propertyPath: m_Pivot.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5880576855631838140, guid: a4a65c8e4b5a87245bb1d90346680bd4, type: 3}
       propertyPath: m_RootOrder
@@ -769,15 +784,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5880576855631838140, guid: a4a65c8e4b5a87245bb1d90346680bd4, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5880576855631838140, guid: a4a65c8e4b5a87245bb1d90346680bd4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5880576855631838140, guid: a4a65c8e4b5a87245bb1d90346680bd4, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5880576855631838140, guid: a4a65c8e4b5a87245bb1d90346680bd4, type: 3}
       propertyPath: m_AnchorMin.y
@@ -785,11 +800,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5880576855631838140, guid: a4a65c8e4b5a87245bb1d90346680bd4, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1080
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5880576855631838140, guid: a4a65c8e4b5a87245bb1d90346680bd4, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1920
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5880576855631838140, guid: a4a65c8e4b5a87245bb1d90346680bd4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1105,7 +1120,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4213075371431064615, guid: e0a0d7937f5528646b4586e9094a1cf0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4213075371431064615, guid: e0a0d7937f5528646b4586e9094a1cf0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
